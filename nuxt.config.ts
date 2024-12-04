@@ -5,19 +5,19 @@ export default defineNuxtConfig({
   css: ['~/assets/styles.css'],
   modules: ['@nuxtjs/prismic'],
   prismic: {
-    endpoint: 'https://vanilla-leagues.cdn.prismic.io/api/v2', // Your endpoint
+    endpoint: 'https://vanilla-leagues.cdn.prismic.io/api/v2',
     routes: [
       {
         type: 'league',
-        path: '/:lang/:uid', // Dynamic routing for leagues
+        path: '/:lang/:uid',
       },
     ],
   },
   runtimeConfig: {
     public: {
       prismic: {
-        locales: ['en-us', 'es-mx'], // Supported locales
-        defaultLocale: 'en-us', // Default locale
+        locales: ['en-us', 'es-mx'],
+        defaultLocale: 'en-us',
       },
     },
   },

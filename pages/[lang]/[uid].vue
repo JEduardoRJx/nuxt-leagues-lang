@@ -103,5 +103,5 @@ const goBackToLeagues = () => {
 </template>
 
 <style lang="css" scoped>
-
+/* ckasses here */
 </style>

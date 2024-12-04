@@ -22,7 +22,6 @@ const fetchLeagues = async () => {
   try {
     const fetchedLeagues = await client.getAllByType('league');
     leagues.value = fetchedLeagues;
-    console.log('Fetched leagues:', leagues.value);
   } catch (error) {
     console.error('Error fetching leagues:', error);
   }
@@ -30,10 +29,6 @@ const fetchLeagues = async () => {
 
 fetchLeagues();
 
-// Switch Language
-const switchLanguage = (newLang) => {
-  router.push(`/${newLang}/${uid}`);
-};
 </script>
 
 <template>
